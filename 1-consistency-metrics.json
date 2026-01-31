@@ -1,0 +1,403 @@
+{
+  "overall": {
+    "total_records": 2777,
+    "total_weeks": 335,
+    "total_eliminations": 297,
+    "seasons_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "methods_used": [
+      "rank",
+      "percentage"
+    ]
+  },
+  "percentage_method": {
+    "total_records": 1997,
+    "total_eliminations": 222,
+    "prediction_accuracy": 0.9696969696969697,
+    "correct_predictions": 192,
+    "total_prediction_weeks": 198
+  },
+  "rank_method": {
+    "total_records": 780,
+    "total_eliminations": 75,
+    "prediction_accuracy": 0.7727272727272727,
+    "correct_predictions": 51,
+    "total_prediction_weeks": 66
+  },
+  "by_season": [
+    {
+      "season": 1,
+      "method": "rank",
+      "contestants": 6,
+      "weeks": 6,
+      "eliminations": 3,
+      "prediction_accuracy": 0.6666666666666666,
+      "avg_fan_vote_percent": 0.23076923076923078,
+      "avg_judge_percent": 0.23076923076923073
+    },
+    {
+      "season": 2,
+      "method": "rank",
+      "contestants": 10,
+      "weeks": 8,
+      "eliminations": 7,
+      "prediction_accuracy": 0.8571428571428571,
+      "avg_fan_vote_percent": 0.1538461538461538,
+      "avg_judge_percent": 0.15384615384615383
+    },
+    {
+      "season": 3,
+      "method": "percentage",
+      "contestants": 11,
+      "weeks": 10,
+      "eliminations": 7,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.15624999999999997,
+      "avg_judge_percent": 0.15624999999999994
+    },
+    {
+      "season": 4,
+      "method": "percentage",
+      "contestants": 11,
+      "weeks": 10,
+      "eliminations": 8,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13513513514375172,
+      "avg_judge_percent": 0.13513513513513506
+    },
+    {
+      "season": 5,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13333333333333328,
+      "avg_judge_percent": 0.13333333333333328
+    },
+    {
+      "season": 6,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13157894736842102,
+      "avg_judge_percent": 0.13157894736842102
+    },
+    {
+      "season": 7,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.1333333333333333,
+      "avg_judge_percent": 0.1333333333333333
+    },
+    {
+      "season": 8,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 11,
+      "eliminations": 10,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.12087912087912084,
+      "avg_judge_percent": 0.12087912087912084
+    },
+    {
+      "season": 9,
+      "method": "percentage",
+      "contestants": 16,
+      "weeks": 10,
+      "eliminations": 12,
+      "prediction_accuracy": 0.8888888888888888,
+      "avg_fan_vote_percent": 0.108695652173913,
+      "avg_judge_percent": 0.108695652173913
+    },
+    {
+      "season": 10,
+      "method": "percentage",
+      "contestants": 11,
+      "weeks": 10,
+      "eliminations": 8,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13513513513513511,
+      "avg_judge_percent": 0.13513513513513511
+    },
+    {
+      "season": 11,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13333333333333328,
+      "avg_judge_percent": 0.1333333333333333
+    },
+    {
+      "season": 12,
+      "method": "percentage",
+      "contestants": 11,
+      "weeks": 10,
+      "eliminations": 8,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.13513513513513511,
+      "avg_judge_percent": 0.1351351351351351
+    },
+    {
+      "season": 13,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.1333333333333333,
+      "avg_judge_percent": 0.13333333333333328
+    },
+    {
+      "season": 14,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 0.875,
+      "avg_fan_vote_percent": 0.12195121951219508,
+      "avg_judge_percent": 0.12195121951219508
+    },
+    {
+      "season": 15,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 10,
+      "eliminations": 10,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.12048192771084337,
+      "avg_judge_percent": 0.12048192771084333
+    },
+    {
+      "season": 16,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 8,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.11904761904761903,
+      "avg_judge_percent": 0.11904761904761903
+    },
+    {
+      "season": 17,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 11,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.11956521739130431,
+      "avg_judge_percent": 0.11956521739130432
+    },
+    {
+      "season": 18,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 7,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.12499999999999996,
+      "avg_judge_percent": 0.12499999999999996
+    },
+    {
+      "season": 19,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 11,
+      "eliminations": 10,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.1170212765957446,
+      "avg_judge_percent": 0.11702127659574464
+    },
+    {
+      "season": 20,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 0.875,
+      "avg_fan_vote_percent": 0.12195121951219508,
+      "avg_judge_percent": 0.12195121951219508
+    },
+    {
+      "season": 21,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 11,
+      "eliminations": 8,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.11827956989247304,
+      "avg_judge_percent": 0.11827956989247308
+    },
+    {
+      "season": 22,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.1176470588235294,
+      "avg_judge_percent": 0.11764705882352937
+    },
+    {
+      "season": 23,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 11,
+      "eliminations": 10,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.11340206186401261,
+      "avg_judge_percent": 0.11340206185567006
+    },
+    {
+      "season": 24,
+      "method": "percentage",
+      "contestants": 12,
+      "weeks": 10,
+      "eliminations": 9,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.12345679012345674,
+      "avg_judge_percent": 0.12345679012345674
+    },
+    {
+      "season": 25,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 10,
+      "eliminations": 10,
+      "prediction_accuracy": 1.0,
+      "avg_fan_vote_percent": 0.11111111111111108,
+      "avg_judge_percent": 0.11111111111111109
+    },
+    {
+      "season": 26,
+      "method": "percentage",
+      "contestants": 10,
+      "weeks": 4,
+      "eliminations": 7,
+      "prediction_accuracy": 0.3333333333333333,
+      "avg_fan_vote_percent": 0.14814814814814814,
+      "avg_judge_percent": 0.1481481481481481
+    },
+    {
+      "season": 27,
+      "method": "percentage",
+      "contestants": 13,
+      "weeks": 9,
+      "eliminations": 9,
+      "prediction_accuracy": 0.8571428571428571,
+      "avg_fan_vote_percent": 0.1097560975692937,
+      "avg_judge_percent": 0.10975609756097557
+    },
+    {
+      "season": 28,
+      "method": "rank",
+      "contestants": 12,
+      "weeks": 11,
+      "eliminations": 7,
+      "prediction_accuracy": 0.8571428571428571,
+      "avg_fan_vote_percent": 0.11956521739130431,
+      "avg_judge_percent": 0.11956521739130427
+    },
+    {
+      "season": 29,
+      "method": "rank",
+      "contestants": 15,
+      "weeks": 11,
+      "eliminations": 10,
+      "prediction_accuracy": 0.7777777777777778,
+      "avg_fan_vote_percent": 0.09565217391304345,
+      "avg_judge_percent": 0.09565217391304345
+    },
+    {
+      "season": 30,
+      "method": "rank",
+      "contestants": 15,
+      "weeks": 10,
+      "eliminations": 11,
+      "prediction_accuracy": 0.75,
+      "avg_fan_vote_percent": 0.0952380952380952,
+      "avg_judge_percent": 0.09523809523809522
+    },
+    {
+      "season": 31,
+      "method": "rank",
+      "contestants": 16,
+      "weeks": 10,
+      "eliminations": 11,
+      "prediction_accuracy": 0.8888888888888888,
+      "avg_fan_vote_percent": 0.0934579439252336,
+      "avg_judge_percent": 0.09345794392523357
+    },
+    {
+      "season": 32,
+      "method": "rank",
+      "contestants": 14,
+      "weeks": 11,
+      "eliminations": 9,
+      "prediction_accuracy": 0.7777777777777778,
+      "avg_fan_vote_percent": 0.10999999999999995,
+      "avg_judge_percent": 0.10999999999999993
+    },
+    {
+      "season": 33,
+      "method": "rank",
+      "contestants": 13,
+      "weeks": 9,
+      "eliminations": 8,
+      "prediction_accuracy": 0.5,
+      "avg_fan_vote_percent": 0.11688311688311684,
+      "avg_judge_percent": 0.1168831168831168
+    },
+    {
+      "season": 34,
+      "method": "rank",
+      "contestants": 14,
+      "weeks": 11,
+      "eliminations": 9,
+      "prediction_accuracy": 0.75,
+      "avg_fan_vote_percent": 0.10377358490566033,
+      "avg_judge_percent": 0.10377358490566034
+    }
+  ]
+}

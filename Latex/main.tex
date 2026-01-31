@@ -1,0 +1,383 @@
+\documentclass[a4paper,12pt]{article}
+
+% Basic packages
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Page geometry
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% Graphics path
+\graphicspath{{figures/}}
+
+% Hyperref settings
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+
+% Title information
+\title{\textbf{数学建模竞赛论文} \\ \large 第一问：观众投票估算模型}
+\author{参赛队伍}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+%=================== 摘要 ===================
+\begin{abstract}
+本文针对《与星共舞》(Dancing with the Stars, DWTS)节目中观众投票数据保密的问题，建立了数学模型来估算每位参赛者在每周的观众投票比例。基于评委分数和淘汰结果作为已知约束条件，我们分别针对两种投票机制（百分比法和排名法）构建了优化模型。
+
+对于百分比法（第3-27季），我们建立了以平滑性为目标函数的约束优化模型，最小化相邻周次间投票比例的变化平方和，同时满足淘汰约束条件。对于排名法（第1-2季和第28-34季），我们设计了基于排名平滑的启发式算法，将排名转换为投票比例。
+
+模型验证结果显示，百分比法的淘汰预测准确率为74.77\%，排名法的准确率为72.00\%。我们进一步分析了估算结果的确定性，通过计算每位参赛者在各周投票比例的波动范围来量化不确定性。
+
+\textbf{关键词：}观众投票估算；约束优化；平滑性假设；百分比法；排名法
+\end{abstract}
+
+%=================== 目录 ===================
+\tableofcontents
+\newpage
+
+%=================== 1. 问题重述 ===================
+\section{问题重述}
+
+\subsection{背景介绍}
+《与星共舞》(Dancing with the Stars, DWTS)是美国一档著名的电视选秀节目，名人与专业舞者搭档进行舞蹈表演。每对选手的得分由两部分组成：专家评委的评分和观众的投票。观众通过电话或网络为喜爱的选手投票，但具体的投票数被严格保密。
+
+节目在不同季度采用了两种不同的投票结合方式：
+\begin{itemize}
+    \item \textbf{排名法}（第1-2季，第28-34季）：将评委排名与观众投票排名相加，综合排名最高者被淘汰
+    \item \textbf{百分比法}（第3-27季）：将评委分数百分比与观众投票百分比相加，综合得分最低者被淘汰
+\end{itemize}
+
+\subsection{问题描述}
+第一问要求开发数学模型来估算每位参赛者在每周的观众投票数（或投票比例）。具体需要解决：
+
+\begin{enumerate}
+    \item 建立模型估算每周每位选手的观众投票比例
+    \item 验证模型能否正确预测淘汰结果，提供一致性衡量标准
+    \item 分析估算结果的确定性，判断每周每位参赛者的确定性是否相同
+\end{enumerate}
+
+%=================== 2. 模型假设与符号说明 ===================
+\section{模型假设与符号说明}
+
+\subsection{基本假设}
+
+\begin{enumerate}
+    \item \textbf{平滑性假设}：观众对选手的支持通常不会每周剧烈变化，相邻周次的投票比例应相对平稳
+    \item \textbf{权重假设}：评委分数与观众投票的权重相等（均为0.5），符合题目示例
+    \item \textbf{淘汰机制假设}：每周被淘汰的选手是综合得分最低（或综合排名最高）的选手
+    \item \textbf{独立季度假设}：不同季度之间相互独立，观众投票行为不具有跨季度关联性
+\end{enumerate}
+
+\subsection{符号说明}
+
+\begin{table}[H]
+\centering
+\caption{符号说明表}
+\begin{tabular}{cl}
+\toprule
+\textbf{符号} & \textbf{含义} \\
+\midrule
+$s$ & 赛季编号 \\
+$t$ & 周次编号 \\
+$i$ & 选手编号 \\
+$R_t$ & 第$t$周剩余选手集合 \\
+$S_{i,t}$ & 选手$i$在第$t$周的评委总分 \\
+$q_{i,t}$ & 评委分数占比：$q_{i,t} = \frac{S_{i,t}}{\sum_{k \in R_t} S_{k,t}}$ \\
+$p_{i,t}$ & 观众投票占比（待估算） \\
+$T_{i,t}$ & 综合得分：$T_{i,t} = \alpha q_{i,t} + (1-\alpha) p_{i,t}$ \\
+$e(t)$ & 第$t$周被淘汰的选手 \\
+$r_{i,t}^J$ & 评委排名（分数最高排名为1） \\
+$r_{i,t}^F$ & 观众投票排名（待估算） \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=================== 3. 数据预处理 ===================
+\section{数据预处理}
+
+\subsection{数据来源}
+数据来自文件"2026\_MCM\_Problem\_C\_Data.csv"，包含第1-34季的名人参赛者信息、评委分数和比赛结果。
+
+\subsection{数据清洗与处理}
+
+\begin{enumerate}
+    \item \textbf{缺失值处理}：将N/A值替换为0，表示该周该评委未参与评分或选手已被淘汰
+    \item \textbf{评委总分计算}：对每周的3-4位评委分数求和，得到选手的评委总分$S_{i,t}$
+    \item \textbf{评委占比计算}：$q_{i,t} = S_{i,t} / \sum_{k \in R_t} S_{k,t}$
+    \item \textbf{淘汰信息提取}：从"results"字段解析每位选手的淘汰周次
+\end{enumerate}
+
+\subsection{赛季分类}
+根据题目描述，将34个赛季分为两类：
+\begin{itemize}
+    \item 百分比法赛季：第3-27季（共25季）
+    \item 排名法赛季：第1-2季、第28-34季（共9季）
+\end{itemize}
+
+%=================== 4. 百分比法模型建立与求解 ===================
+\section{百分比法模型建立与求解}
+
+\subsection{模型建立}
+
+对于百分比法赛季（第3-27季），观众投票以百分比形式与评委分数百分比相加。
+
+\textbf{决策变量}：每周每位剩余选手的观众投票比例$p_{i,t}$
+
+\textbf{目标函数}（平滑性最小化）：
+\begin{equation}
+\min_{p_{i,t}} \quad \sum_{i,t} (p_{i,t} - p_{i,t-1})^2
+\end{equation}
+
+该目标函数体现了平滑性假设：观众支持不会每周剧烈变化。
+
+\textbf{约束条件}：
+
+\begin{align}
+& \sum_{i \in R_t} p_{i,t} = 1, && \forall t \quad \text{（比例和为1）} \\
+& p_{i,t} \geq 0, && \forall i,t \quad \text{（非负约束）} \\
+& T_{e(t),t} \leq T_{i,t}, && \forall i \in R_t \quad \text{（淘汰约束）}
+\end{align}
+
+其中，综合得分计算公式为：
+\begin{equation}
+T_{i,t} = \alpha q_{i,t} + (1-\alpha) p_{i,t}, \quad \alpha = 0.5
+\end{equation}
+
+\subsection{求解方法}
+
+采用SLSQP（Sequential Least Squares Programming）算法求解该约束优化问题。对每个赛季独立求解。
+
+\subsection{模型结果}
+
+模型求解结果如表\ref{tab:pct_metrics}所示。
+
+\begin{table}[H]
+\centering
+\caption{百分比法模型评估指标}
+\label{tab:pct_metrics}
+\begin{tabular}{lc}
+\toprule
+\textbf{指标} & \textbf{数值} \\
+\midrule
+淘汰预测准确率 & 74.77\% \\
+总淘汰周数 & 222 \\
+正确预测淘汰周数 & 166 \\
+平均淘汰边际 & 0.0166 \\
+最小淘汰边际 & 0.0000 \\
+最大淘汰边际 & 0.1744 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=================== 5. 排名法模型建立与求解 ===================
+\section{排名法模型建立与求解}
+
+\subsection{模型建立}
+
+对于排名法赛季（第1-2季、第28-34季），评委排名与观众投票排名相加得到综合排名。
+
+\textbf{决策变量}：每周每位剩余选手的观众投票排名$r_{i,t}^F$
+
+\textbf{目标函数}（排名平滑性）：
+\begin{equation}
+\min \sum_{i,t} (r_{i,t}^F - r_{i,t-1}^F)^2
+\end{equation}
+
+\textbf{约束条件}：
+\begin{align}
+& \{r_{i,t}^F\}_{i \in R_t} = \{1, 2, \ldots, |R_t|\}, && \forall t \quad \text{（排列约束）} \\
+& r_{e(t),t}^J + r_{e(t),t}^F \geq r_{i,t}^J + r_{i,t}^F, && \forall i \in R_t \quad \text{（淘汰约束）}
+\end{align}
+
+\subsection{求解方法}
+
+采用启发式算法求解：
+\begin{enumerate}
+    \item 初始周：均匀分配排名
+    \item 后续周：基于上周排名，最小化变化的同时满足淘汰约束
+    \item 通过排名交换调整以满足淘汰约束
+\end{enumerate}
+
+\subsection{投票比例转换}
+
+将排名转换为投票比例，采用幂律分布：
+\begin{equation}
+p_{i,t} \propto \frac{1}{(r_{i,t}^F)^{0.5}}
+\end{equation}
+
+\subsection{模型结果}
+
+排名法模型评估指标如表\ref{tab:rank_metrics}所示。
+
+\begin{table}[H]
+\centering
+\caption{排名法模型评估指标}
+\label{tab:rank_metrics}
+\begin{tabular}{lc}
+\toprule
+\textbf{指标} & \textbf{数值} \\
+\midrule
+淘汰预测准确率 & 72.00\% \\
+总淘汰周数 & 75 \\
+正确预测淘汰周数 & 54 \\
+平均排名变化 & 0.967 \\
+最大排名变化 & 15 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=================== 6. 结果分析与可视化 ===================
+\section{结果分析与可视化}
+
+\subsection{投票分布热图}
+
+图\ref{fig:vote_dist}展示了不同赛季、不同周的观众投票分布情况。可以观察到投票分布的季度间差异和周间变化模式。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/1-fig-vote-distribution.png}
+\caption{观众投票分布热图（左：百分比法，右：排名法）}
+\label{fig:vote_dist}
+\end{figure}
+
+\subsection{平滑性验证}
+
+图\ref{fig:smoothness}验证了平滑性假设的合理性，展示了周间投票比例变化的分布情况。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/1-fig-smoothness-validation.png}
+\caption{投票比例平滑性验证}
+\label{fig:smoothness}
+\end{figure}
+
+\subsection{淘汰预测准确率分析}
+
+图\ref{fig:accuracy}展示了各赛季的淘汰预测准确率和两种方法的整体对比。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/1-fig-elimination-accuracy.png}
+\caption{淘汰预测准确率分析}
+\label{fig:accuracy}
+\end{figure}
+
+\subsection{不确定性分析}
+
+图\ref{fig:uncertainty}分析了估算结果的不确定性，通过计算每位参赛者投票比例的波动范围来量化。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/1-fig-uncertainty-analysis.png}
+\caption{投票估算不确定性分析}
+\label{fig:uncertainty}
+\end{figure}
+
+\subsection{赛季对比分析}
+
+图\ref{fig:comparison}选取了代表性赛季，展示了评委分数占比与观众投票占比的关系。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/1-fig-season-comparison.png}
+\caption{评委分数与观众投票关系对比}
+\label{fig:comparison}
+\end{figure}
+
+%=================== 7. 确定性分析 ===================
+\section{确定性分析}
+
+\subsection{一致性衡量标准}
+
+我们采用以下指标衡量模型的一致性：
+
+\begin{enumerate}
+    \item \textbf{淘汰命中率}：正确预测淘汰的周数占总淘汰周数的比例
+    \begin{equation}
+    \text{Accuracy} = \frac{M}{N}
+    \end{equation}
+    其中$M$为正确预测数，$N$为总淘汰周数。
+    
+    \item \textbf{淘汰边际}：被淘汰者与第二名低分者的得分差距
+    \begin{equation}
+    \text{Margin}_t = T_{2nd\_lowest,t} - T_{lowest,t}
+    \end{equation}
+    
+    边际越大，淘汰结果越确定；边际越小，结果越可能存在争议。
+\end{enumerate}
+
+\subsection{确定性衡量标准}
+
+对于每位参赛者在每周的投票估算，我们通过以下方式量化不确定性：
+
+\begin{enumerate}
+    \item 在满足所有约束条件下，探索$p_{i,t}$的可能取值范围$[p_{i,t}^{min}, p_{i,t}^{max}]$
+    \item 定义不确定性度量：$U_{i,t} = p_{i,t}^{max} - p_{i,t}^{min}$
+    \item 若$U_{i,t}$较大，说明该估算具有较宽的取值范围，不确定性较高
+\end{enumerate}
+
+分析结果显示，不同周次、不同参赛者的确定性存在显著差异。通常，比赛初期（参赛人数较多）的不确定性较高，比赛后期（参赛人数较少）的不确定性较低。
+
+%=================== 8. 模型评价与改进 ===================
+\section{模型评价与改进}
+
+\subsection{模型优点}
+
+\begin{enumerate}
+    \item \textbf{理论基础扎实}：基于平滑性假设和淘汰约束构建了完整的优化框架
+    \item \textbf{适用性广}：分别针对两种投票机制建立了对应的模型
+    \item \textbf{可解释性强}：模型参数和结果具有明确的实际意义
+\end{enumerate}
+
+\subsection{模型局限性}
+
+\begin{enumerate}
+    \item \textbf{准确率有待提高}：百分比法74.77\%、排名法72.00\%的准确率表明模型仍有改进空间
+    \item \textbf{多淘汰情况处理}：存在多选手同时淘汰的周次，模型未特殊处理
+    \item \textbf{无淘汰周处理}：部分周次无淘汰，约束条件不完整
+\end{enumerate}
+
+\subsection{改进方向}
+
+\begin{enumerate}
+    \item 引入更多先验信息，如选手行业、年龄、舞伴等特征
+    \item 考虑不同周的投票权重差异（决赛周可能投票率更高）
+    \item 使用贝叶斯方法量化不确定性，提供更完备的置信区间
+\end{enumerate}
+
+%=================== 9. 结论 ===================
+\section{结论}
+
+本文针对DWTS节目中观众投票估算问题，建立了基于约束优化的数学模型。主要工作包括：
+
+\begin{enumerate}
+    \item 分别针对百分比法和排名法两种投票机制，建立了以平滑性为目标函数的优化模型
+    \item 模型求解结果显示，百分比法淘汰预测准确率为74.77\%，排名法为72.00\%
+    \item 提出了淘汰命中率和淘汰边际作为一致性衡量标准
+    \item 分析了估算结果的确定性，发现不同周次、不同参赛者的确定性存在差异
+\end{enumerate}
+
+模型能够较好地估算观众投票分布，为后续分析两种投票方法的公平性以及舞者、名人特征的影响提供了基础数据支持。
+
+%=================== 参考文献 ===================
+\begin{thebibliography}{9}
+
+\bibitem{ref1} COMAP. 2026 Mathematical Contest in Modeling Problem C[EB/OL]. 2026.
+
+\bibitem{ref2} Boyd S, Vandenberghe L. Convex Optimization[M]. Cambridge University Press, 2004.
+
+\bibitem{ref3} Kraft D. A Software Package for Sequential Quadratic Programming[R]. DFVLR, 1988.
+
+\end{thebibliography}
+
+\end{document}
