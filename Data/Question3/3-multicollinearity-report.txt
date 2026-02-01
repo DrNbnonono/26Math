@@ -1,0 +1,16 @@
+Variance Inflation Factor (VIF) Analysis
+==================================================
+
+         Feature       VIF
+     judge_total 12.156361
+   judge_percent 14.246657
+fan_vote_percent  2.642024
+             age  5.235764
+            week  9.664069
+
+High VIF Features (>5):
+      Feature       VIF
+  judge_total 12.156361
+judge_percent 14.246657
+          age  5.235764
+         week  9.664069

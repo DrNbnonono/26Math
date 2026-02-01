@@ -1,0 +1,215 @@
+{
+  "total_seasons": 34,
+  "diverged_count": 31,
+  "divergence_rate": 0.9117647058823529,
+  "diverged_seasons": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "non_diverged_seasons": [
+    1,
+    6,
+    24
+  ],
+  "alignment_summary": [
+    {
+      "season": 1,
+      "diverged": false,
+      "divergence_week": NaN
+    },
+    {
+      "season": 2,
+      "diverged": true,
+      "divergence_week": 6.0
+    },
+    {
+      "season": 3,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 4,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 5,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 6,
+      "diverged": false,
+      "divergence_week": NaN
+    },
+    {
+      "season": 7,
+      "diverged": true,
+      "divergence_week": 1.0
+    },
+    {
+      "season": 8,
+      "diverged": true,
+      "divergence_week": 3.0
+    },
+    {
+      "season": 9,
+      "diverged": true,
+      "divergence_week": 3.0
+    },
+    {
+      "season": 10,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 11,
+      "diverged": true,
+      "divergence_week": 5.0
+    },
+    {
+      "season": 12,
+      "diverged": true,
+      "divergence_week": 3.0
+    },
+    {
+      "season": 13,
+      "diverged": true,
+      "divergence_week": 1.0
+    },
+    {
+      "season": 14,
+      "diverged": true,
+      "divergence_week": 4.0
+    },
+    {
+      "season": 15,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 16,
+      "diverged": true,
+      "divergence_week": 4.0
+    },
+    {
+      "season": 17,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 18,
+      "diverged": true,
+      "divergence_week": 5.0
+    },
+    {
+      "season": 19,
+      "diverged": true,
+      "divergence_week": 1.0
+    },
+    {
+      "season": 20,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 21,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 22,
+      "diverged": true,
+      "divergence_week": 4.0
+    },
+    {
+      "season": 23,
+      "diverged": true,
+      "divergence_week": 3.0
+    },
+    {
+      "season": 24,
+      "diverged": false,
+      "divergence_week": NaN
+    },
+    {
+      "season": 25,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 26,
+      "diverged": true,
+      "divergence_week": 1.0
+    },
+    {
+      "season": 27,
+      "diverged": true,
+      "divergence_week": 3.0
+    },
+    {
+      "season": 28,
+      "diverged": true,
+      "divergence_week": 9.0
+    },
+    {
+      "season": 29,
+      "diverged": true,
+      "divergence_week": 7.0
+    },
+    {
+      "season": 30,
+      "diverged": true,
+      "divergence_week": 6.0
+    },
+    {
+      "season": 31,
+      "diverged": true,
+      "divergence_week": 8.0
+    },
+    {
+      "season": 32,
+      "diverged": true,
+      "divergence_week": 6.0
+    },
+    {
+      "season": 33,
+      "diverged": true,
+      "divergence_week": 2.0
+    },
+    {
+      "season": 34,
+      "diverged": true,
+      "divergence_week": 8.0
+    }
+  ]
+}

@@ -1,0 +1,1867 @@
+{
+  "bias_scores": {
+    "percentage_method": [
+      {
+        "season": 3,
+        "week": 1,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 3,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 3,
+        "week": 3,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 0.4444444444444444,
+        "bias_score": 0.2222222222222222
+      },
+      {
+        "season": 3,
+        "week": 4,
+        "fan_alignment": 0.875,
+        "judge_alignment": 0.5,
+        "bias_score": 0.375
+      },
+      {
+        "season": 3,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.16666666666666666,
+        "bias_score": 0.8333333333333334
+      },
+      {
+        "season": 3,
+        "week": 7,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 3,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 4,
+        "week": 2,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 0.5454545454545454,
+        "bias_score": 0.36363636363636365
+      },
+      {
+        "season": 4,
+        "week": 3,
+        "fan_alignment": 0.8,
+        "judge_alignment": 0.6,
+        "bias_score": 0.20000000000000007
+      },
+      {
+        "season": 4,
+        "week": 4,
+        "fan_alignment": 0.8888888888888888,
+        "judge_alignment": 0.7777777777777778,
+        "bias_score": 0.11111111111111105
+      },
+      {
+        "season": 4,
+        "week": 5,
+        "fan_alignment": 0.625,
+        "judge_alignment": 1.0,
+        "bias_score": -0.375
+      },
+      {
+        "season": 4,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": 0.2857142857142857
+      },
+      {
+        "season": 4,
+        "week": 7,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.0
+      },
+      {
+        "season": 4,
+        "week": 8,
+        "fan_alignment": 0.8,
+        "judge_alignment": 1.0,
+        "bias_score": -0.19999999999999996
+      },
+      {
+        "season": 4,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 5,
+        "week": 1,
+        "fan_alignment": 0.9166666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.08333333333333337
+      },
+      {
+        "season": 5,
+        "week": 2,
+        "fan_alignment": 0.9,
+        "judge_alignment": 0.45454545454545453,
+        "bias_score": 0.4454545454545455
+      },
+      {
+        "season": 5,
+        "week": 3,
+        "fan_alignment": 0.4,
+        "judge_alignment": 1.0,
+        "bias_score": -0.6
+      },
+      {
+        "season": 5,
+        "week": 4,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 5,
+        "week": 5,
+        "fan_alignment": 0.625,
+        "judge_alignment": 1.0,
+        "bias_score": -0.375
+      },
+      {
+        "season": 5,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.5714285714285714,
+        "bias_score": 0.4285714285714286
+      },
+      {
+        "season": 5,
+        "week": 7,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 5,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 5,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 6,
+        "week": 2,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 1.0,
+        "bias_score": -0.16666666666666663
+      },
+      {
+        "season": 6,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 6,
+        "week": 4,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 6,
+        "week": 5,
+        "fan_alignment": 0.875,
+        "judge_alignment": 1.0,
+        "bias_score": -0.125
+      },
+      {
+        "season": 6,
+        "week": 6,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 1.0,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 6,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 6,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 6,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 7,
+        "week": 1,
+        "fan_alignment": 0.36363636363636365,
+        "judge_alignment": 1.0,
+        "bias_score": -0.6363636363636364
+      },
+      {
+        "season": 7,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8181818181818182,
+        "bias_score": 0.18181818181818177
+      },
+      {
+        "season": 7,
+        "week": 4,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 7,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": 0.2857142857142857
+      },
+      {
+        "season": 7,
+        "week": 6,
+        "fan_alignment": 0.7142857142857143,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2857142857142857
+      },
+      {
+        "season": 7,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 7,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 7,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 8,
+        "week": 2,
+        "fan_alignment": 0.8461538461538461,
+        "judge_alignment": 0.6923076923076923,
+        "bias_score": 0.15384615384615385
+      },
+      {
+        "season": 8,
+        "week": 3,
+        "fan_alignment": 0.9166666666666666,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.08333333333333326
+      },
+      {
+        "season": 8,
+        "week": 4,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 0.8181818181818182,
+        "bias_score": 0.09090909090909083
+      },
+      {
+        "season": 8,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 8,
+        "week": 6,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 8,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 8,
+        "week": 8,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.0
+      },
+      {
+        "season": 8,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 8,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 9,
+        "week": 1,
+        "fan_alignment": 0.9375,
+        "judge_alignment": 1.0,
+        "bias_score": -0.0625
+      },
+      {
+        "season": 9,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 9,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7692307692307693,
+        "bias_score": 0.23076923076923073
+      },
+      {
+        "season": 9,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9,
+        "bias_score": 0.09999999999999998
+      },
+      {
+        "season": 9,
+        "week": 5,
+        "fan_alignment": 0.8,
+        "judge_alignment": 0.8,
+        "bias_score": 0.0
+      },
+      {
+        "season": 9,
+        "week": 6,
+        "fan_alignment": 0.5555555555555556,
+        "judge_alignment": 0.7777777777777778,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 9,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 9,
+        "week": 8,
+        "fan_alignment": 0.8,
+        "judge_alignment": 1.0,
+        "bias_score": -0.19999999999999996
+      },
+      {
+        "season": 9,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.5,
+        "bias_score": 0.5
+      },
+      {
+        "season": 10,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.5454545454545454,
+        "bias_score": 0.4545454545454546
+      },
+      {
+        "season": 10,
+        "week": 3,
+        "fan_alignment": 0.4,
+        "judge_alignment": 1.0,
+        "bias_score": -0.6
+      },
+      {
+        "season": 10,
+        "week": 4,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 10,
+        "week": 5,
+        "fan_alignment": 0.5,
+        "judge_alignment": 1.0,
+        "bias_score": -0.5
+      },
+      {
+        "season": 10,
+        "week": 6,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 1.0,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 10,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 10,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 10,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 11,
+        "week": 1,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 11,
+        "week": 2,
+        "fan_alignment": 0.6363636363636364,
+        "judge_alignment": 1.0,
+        "bias_score": -0.36363636363636365
+      },
+      {
+        "season": 11,
+        "week": 3,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 11,
+        "week": 4,
+        "fan_alignment": 0.8888888888888888,
+        "judge_alignment": 1.0,
+        "bias_score": -0.11111111111111116
+      },
+      {
+        "season": 11,
+        "week": 5,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.75,
+        "bias_score": 0.0
+      },
+      {
+        "season": 11,
+        "week": 6,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 0.2857142857142857,
+        "bias_score": 0.5714285714285714
+      },
+      {
+        "season": 11,
+        "week": 7,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.16666666666666674
+      },
+      {
+        "season": 11,
+        "week": 8,
+        "fan_alignment": 0.8,
+        "judge_alignment": 0.8,
+        "bias_score": 0.0
+      },
+      {
+        "season": 11,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 12,
+        "week": 2,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 1.0,
+        "bias_score": -0.09090909090909094
+      },
+      {
+        "season": 12,
+        "week": 3,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 12,
+        "week": 4,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": -0.11111111111111105
+      },
+      {
+        "season": 12,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 12,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 12,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 12,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 12,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 13,
+        "week": 1,
+        "fan_alignment": 0.8181818181818182,
+        "judge_alignment": 1.0,
+        "bias_score": -0.18181818181818177
+      },
+      {
+        "season": 13,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.36363636363636365,
+        "bias_score": 0.6363636363636364
+      },
+      {
+        "season": 13,
+        "week": 3,
+        "fan_alignment": 0.9,
+        "judge_alignment": 0.4,
+        "bias_score": 0.5
+      },
+      {
+        "season": 13,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 13,
+        "week": 5,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 13,
+        "week": 6,
+        "fan_alignment": 0.5714285714285714,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4285714285714286
+      },
+      {
+        "season": 13,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.16666666666666663
+      },
+      {
+        "season": 13,
+        "week": 8,
+        "fan_alignment": 0.8,
+        "judge_alignment": 1.0,
+        "bias_score": -0.19999999999999996
+      },
+      {
+        "season": 13,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 14,
+        "week": 2,
+        "fan_alignment": 0.9166666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.08333333333333337
+      },
+      {
+        "season": 14,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 14,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9,
+        "bias_score": 0.09999999999999998
+      },
+      {
+        "season": 14,
+        "week": 5,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 14,
+        "week": 6,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 14,
+        "week": 7,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 0.8571428571428571,
+        "bias_score": 0.0
+      },
+      {
+        "season": 14,
+        "week": 8,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 14,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.25,
+        "bias_score": 0.75
+      },
+      {
+        "season": 15,
+        "week": 1,
+        "fan_alignment": 0.8461538461538461,
+        "judge_alignment": 1.0,
+        "bias_score": -0.15384615384615385
+      },
+      {
+        "season": 15,
+        "week": 2,
+        "fan_alignment": 0.9166666666666666,
+        "judge_alignment": 0.5833333333333334,
+        "bias_score": 0.33333333333333326
+      },
+      {
+        "season": 15,
+        "week": 3,
+        "fan_alignment": 0.7272727272727273,
+        "judge_alignment": 0.8181818181818182,
+        "bias_score": -0.09090909090909094
+      },
+      {
+        "season": 15,
+        "week": 4,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 15,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.125,
+        "bias_score": 0.875
+      },
+      {
+        "season": 15,
+        "week": 8,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 0.2857142857142857,
+        "bias_score": 0.5714285714285714
+      },
+      {
+        "season": 15,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 16,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 16,
+        "week": 4,
+        "fan_alignment": 0.8,
+        "judge_alignment": 1.0,
+        "bias_score": -0.19999999999999996
+      },
+      {
+        "season": 16,
+        "week": 5,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 16,
+        "week": 6,
+        "fan_alignment": 0.875,
+        "judge_alignment": 1.0,
+        "bias_score": -0.125
+      },
+      {
+        "season": 16,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 16,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 16,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 16,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 17,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9166666666666666,
+        "bias_score": 0.08333333333333337
+      },
+      {
+        "season": 17,
+        "week": 3,
+        "fan_alignment": 0.8181818181818182,
+        "judge_alignment": 1.0,
+        "bias_score": -0.18181818181818177
+      },
+      {
+        "season": 17,
+        "week": 4,
+        "fan_alignment": 0.9,
+        "judge_alignment": 1.0,
+        "bias_score": -0.09999999999999998
+      },
+      {
+        "season": 17,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.1111111111111111,
+        "bias_score": 0.8888888888888888
+      },
+      {
+        "season": 17,
+        "week": 7,
+        "fan_alignment": 0.875,
+        "judge_alignment": 0.625,
+        "bias_score": 0.25
+      },
+      {
+        "season": 17,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": 0.2857142857142857
+      },
+      {
+        "season": 17,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.3333333333333333,
+        "bias_score": 0.6666666666666667
+      },
+      {
+        "season": 17,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 17,
+        "week": 11,
+        "fan_alignment": 0.5,
+        "judge_alignment": 1.0,
+        "bias_score": -0.5
+      },
+      {
+        "season": 18,
+        "week": 2,
+        "fan_alignment": 0.9,
+        "judge_alignment": 0.6363636363636364,
+        "bias_score": 0.26363636363636367
+      },
+      {
+        "season": 18,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": 0.11111111111111116
+      },
+      {
+        "season": 18,
+        "week": 6,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 18,
+        "week": 7,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 1.0,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 18,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 18,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 18,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 19,
+        "week": 1,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9230769230769231,
+        "bias_score": 0.07692307692307687
+      },
+      {
+        "season": 19,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 19,
+        "week": 3,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 1.0,
+        "bias_score": -0.09090909090909094
+      },
+      {
+        "season": 19,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 19,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.625,
+        "bias_score": 0.375
+      },
+      {
+        "season": 19,
+        "week": 7,
+        "fan_alignment": 0.875,
+        "judge_alignment": 0.875,
+        "bias_score": 0.0
+      },
+      {
+        "season": 19,
+        "week": 8,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 1.0,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 19,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.16666666666666663
+      },
+      {
+        "season": 19,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 19,
+        "week": 11,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 20,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.4166666666666667,
+        "bias_score": 0.5833333333333333
+      },
+      {
+        "season": 20,
+        "week": 3,
+        "fan_alignment": 0.5454545454545454,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4545454545454546
+      },
+      {
+        "season": 20,
+        "week": 4,
+        "fan_alignment": 0.8,
+        "judge_alignment": 0.7,
+        "bias_score": 0.10000000000000009
+      },
+      {
+        "season": 20,
+        "week": 5,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 0.5555555555555556,
+        "bias_score": 0.2222222222222222
+      },
+      {
+        "season": 20,
+        "week": 6,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.75,
+        "bias_score": 0.0
+      },
+      {
+        "season": 20,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.3333333333333333,
+        "bias_score": 0.6666666666666667
+      },
+      {
+        "season": 20,
+        "week": 8,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.16666666666666674
+      },
+      {
+        "season": 20,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.25,
+        "bias_score": 0.75
+      },
+      {
+        "season": 21,
+        "week": 2,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 21,
+        "week": 4,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 21,
+        "week": 6,
+        "fan_alignment": 0.7777777777777778,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 21,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.25,
+        "bias_score": 0.75
+      },
+      {
+        "season": 21,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 21,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.16666666666666666,
+        "bias_score": 0.8333333333333334
+      },
+      {
+        "season": 21,
+        "week": 11,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.25,
+        "bias_score": 0.75
+      },
+      {
+        "season": 22,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 22,
+        "week": 3,
+        "fan_alignment": 0.7272727272727273,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2727272727272727
+      },
+      {
+        "season": 22,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 22,
+        "week": 6,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 22,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.625,
+        "bias_score": 0.375
+      },
+      {
+        "season": 22,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.16666666666666666,
+        "bias_score": 0.8333333333333334
+      },
+      {
+        "season": 22,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 23,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7692307692307693,
+        "bias_score": 0.23076923076923073
+      },
+      {
+        "season": 23,
+        "week": 3,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 23,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 23,
+        "week": 6,
+        "fan_alignment": 0.8888888888888888,
+        "judge_alignment": 1.0,
+        "bias_score": -0.11111111111111116
+      },
+      {
+        "season": 23,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 23,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": 0.2857142857142857
+      },
+      {
+        "season": 23,
+        "week": 9,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 1.0,
+        "bias_score": -0.16666666666666663
+      },
+      {
+        "season": 23,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.2,
+        "bias_score": 0.8
+      },
+      {
+        "season": 23,
+        "week": 11,
+        "fan_alignment": 0.75,
+        "judge_alignment": 1.0,
+        "bias_score": -0.25
+      },
+      {
+        "season": 24,
+        "week": 2,
+        "fan_alignment": 0.9166666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.08333333333333337
+      },
+      {
+        "season": 24,
+        "week": 3,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 1.0,
+        "bias_score": -0.09090909090909094
+      },
+      {
+        "season": 24,
+        "week": 4,
+        "fan_alignment": 0.9,
+        "judge_alignment": 1.0,
+        "bias_score": -0.09999999999999998
+      },
+      {
+        "season": 24,
+        "week": 5,
+        "fan_alignment": 0.8888888888888888,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.2222222222222222
+      },
+      {
+        "season": 24,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.125,
+        "bias_score": 0.875
+      },
+      {
+        "season": 24,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.5714285714285714,
+        "bias_score": 0.4285714285714286
+      },
+      {
+        "season": 24,
+        "week": 8,
+        "fan_alignment": 0.8,
+        "judge_alignment": 1.0,
+        "bias_score": -0.19999999999999996
+      },
+      {
+        "season": 24,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.25,
+        "bias_score": 0.75
+      },
+      {
+        "season": 25,
+        "week": 2,
+        "fan_alignment": 0.6153846153846154,
+        "judge_alignment": 1.0,
+        "bias_score": -0.3846153846153846
+      },
+      {
+        "season": 25,
+        "week": 4,
+        "fan_alignment": 0.7,
+        "judge_alignment": 0.9090909090909091,
+        "bias_score": -0.2090909090909091
+      },
+      {
+        "season": 25,
+        "week": 5,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 25,
+        "week": 6,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 1.0,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 25,
+        "week": 7,
+        "fan_alignment": 0.875,
+        "judge_alignment": 1.0,
+        "bias_score": -0.125
+      },
+      {
+        "season": 25,
+        "week": 8,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 25,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 25,
+        "week": 10,
+        "fan_alignment": 0.5,
+        "judge_alignment": 1.0,
+        "bias_score": -0.5
+      },
+      {
+        "season": 26,
+        "week": 1,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8,
+        "bias_score": 0.19999999999999996
+      },
+      {
+        "season": 26,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.375,
+        "bias_score": 0.625
+      },
+      {
+        "season": 26,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.16666666666666663
+      },
+      {
+        "season": 27,
+        "week": 1,
+        "fan_alignment": 0.8461538461538461,
+        "judge_alignment": 0.9230769230769231,
+        "bias_score": -0.07692307692307698
+      },
+      {
+        "season": 27,
+        "week": 2,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.9166666666666666,
+        "bias_score": -0.08333333333333326
+      },
+      {
+        "season": 27,
+        "week": 3,
+        "fan_alignment": 0.8181818181818182,
+        "judge_alignment": 0.8181818181818182,
+        "bias_score": 0.0
+      },
+      {
+        "season": 27,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.2,
+        "bias_score": 0.8
+      },
+      {
+        "season": 27,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 27,
+        "week": 7,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.75,
+        "bias_score": 0.0
+      },
+      {
+        "season": 27,
+        "week": 8,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.0
+      }
+    ],
+    "rank_method": [
+      {
+        "season": 1,
+        "week": 2,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": 0.33333333333333337
+      },
+      {
+        "season": 1,
+        "week": 3,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 1,
+        "week": 4,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.5,
+        "bias_score": 0.25
+      },
+      {
+        "season": 2,
+        "week": 1,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9,
+        "bias_score": 0.09999999999999998
+      },
+      {
+        "season": 2,
+        "week": 2,
+        "fan_alignment": 0.8888888888888888,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": 0.0
+      },
+      {
+        "season": 2,
+        "week": 3,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.625,
+        "bias_score": 0.125
+      },
+      {
+        "season": 2,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 2,
+        "week": 5,
+        "fan_alignment": 0.3333333333333333,
+        "judge_alignment": 1.0,
+        "bias_score": -0.6666666666666667
+      },
+      {
+        "season": 2,
+        "week": 6,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 2,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 28,
+        "week": 2,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": -0.16666666666666674
+      },
+      {
+        "season": 28,
+        "week": 4,
+        "fan_alignment": 0.7,
+        "judge_alignment": 1.0,
+        "bias_score": -0.30000000000000004
+      },
+      {
+        "season": 28,
+        "week": 6,
+        "fan_alignment": 0.5555555555555556,
+        "judge_alignment": 0.1111111111111111,
+        "bias_score": 0.4444444444444445
+      },
+      {
+        "season": 28,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.75,
+        "bias_score": 0.25
+      },
+      {
+        "season": 28,
+        "week": 8,
+        "fan_alignment": 0.8571428571428571,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": 0.1428571428571428
+      },
+      {
+        "season": 28,
+        "week": 9,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 1.0,
+        "bias_score": -0.16666666666666663
+      },
+      {
+        "season": 28,
+        "week": 10,
+        "fan_alignment": 0.4,
+        "judge_alignment": 1.0,
+        "bias_score": -0.6
+      },
+      {
+        "season": 29,
+        "week": 2,
+        "fan_alignment": 0.9333333333333333,
+        "judge_alignment": 1.0,
+        "bias_score": -0.06666666666666665
+      },
+      {
+        "season": 29,
+        "week": 3,
+        "fan_alignment": 0.9285714285714286,
+        "judge_alignment": 1.0,
+        "bias_score": -0.0714285714285714
+      },
+      {
+        "season": 29,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 29,
+        "week": 5,
+        "fan_alignment": 0.5833333333333334,
+        "judge_alignment": 1.0,
+        "bias_score": -0.41666666666666663
+      },
+      {
+        "season": 29,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9090909090909091,
+        "bias_score": 0.09090909090909094
+      },
+      {
+        "season": 29,
+        "week": 7,
+        "fan_alignment": 0.6,
+        "judge_alignment": 1.0,
+        "bias_score": -0.4
+      },
+      {
+        "season": 29,
+        "week": 8,
+        "fan_alignment": 0.5,
+        "judge_alignment": 0.625,
+        "bias_score": -0.125
+      },
+      {
+        "season": 29,
+        "week": 9,
+        "fan_alignment": 0.7142857142857143,
+        "judge_alignment": 0.8571428571428571,
+        "bias_score": -0.1428571428571428
+      },
+      {
+        "season": 29,
+        "week": 10,
+        "fan_alignment": 0.5,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": -0.16666666666666663
+      },
+      {
+        "season": 30,
+        "week": 2,
+        "fan_alignment": 0.9333333333333333,
+        "judge_alignment": 1.0,
+        "bias_score": -0.06666666666666665
+      },
+      {
+        "season": 30,
+        "week": 3,
+        "fan_alignment": 0.5714285714285714,
+        "judge_alignment": 0.5,
+        "bias_score": 0.0714285714285714
+      },
+      {
+        "season": 30,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 30,
+        "week": 5,
+        "fan_alignment": 0.6363636363636364,
+        "judge_alignment": 0.2727272727272727,
+        "bias_score": 0.36363636363636365
+      },
+      {
+        "season": 30,
+        "week": 6,
+        "fan_alignment": 0.5,
+        "judge_alignment": 1.0,
+        "bias_score": -0.5
+      },
+      {
+        "season": 30,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 30,
+        "week": 8,
+        "fan_alignment": 0.625,
+        "judge_alignment": 1.0,
+        "bias_score": -0.375
+      },
+      {
+        "season": 30,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.16666666666666663
+      },
+      {
+        "season": 31,
+        "week": 1,
+        "fan_alignment": 0.0625,
+        "judge_alignment": 0.9375,
+        "bias_score": -0.875
+      },
+      {
+        "season": 31,
+        "week": 2,
+        "fan_alignment": 0.8666666666666667,
+        "judge_alignment": 0.9333333333333333,
+        "bias_score": -0.06666666666666665
+      },
+      {
+        "season": 31,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9285714285714286,
+        "bias_score": 0.0714285714285714
+      },
+      {
+        "season": 31,
+        "week": 4,
+        "fan_alignment": 0.6153846153846154,
+        "judge_alignment": 1.0,
+        "bias_score": -0.3846153846153846
+      },
+      {
+        "season": 31,
+        "week": 5,
+        "fan_alignment": 0.8333333333333334,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.0
+      },
+      {
+        "season": 31,
+        "week": 6,
+        "fan_alignment": 0.9,
+        "judge_alignment": 0.9,
+        "bias_score": 0.0
+      },
+      {
+        "season": 31,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8888888888888888,
+        "bias_score": 0.11111111111111116
+      },
+      {
+        "season": 31,
+        "week": 8,
+        "fan_alignment": 0.5,
+        "judge_alignment": 0.875,
+        "bias_score": -0.375
+      },
+      {
+        "season": 31,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.8333333333333334,
+        "bias_score": 0.16666666666666663
+      },
+      {
+        "season": 32,
+        "week": 1,
+        "fan_alignment": 0.5,
+        "judge_alignment": 1.0,
+        "bias_score": -0.5
+      },
+      {
+        "season": 32,
+        "week": 2,
+        "fan_alignment": 0.9230769230769231,
+        "judge_alignment": 0.6923076923076923,
+        "bias_score": 0.23076923076923084
+      },
+      {
+        "season": 32,
+        "week": 3,
+        "fan_alignment": 0.6666666666666666,
+        "judge_alignment": 1.0,
+        "bias_score": -0.33333333333333337
+      },
+      {
+        "season": 32,
+        "week": 4,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.6,
+        "bias_score": 0.4
+      },
+      {
+        "season": 32,
+        "week": 5,
+        "fan_alignment": 0.6,
+        "judge_alignment": 0.8,
+        "bias_score": -0.20000000000000007
+      },
+      {
+        "season": 32,
+        "week": 6,
+        "fan_alignment": 0.4444444444444444,
+        "judge_alignment": 0.6666666666666666,
+        "bias_score": -0.2222222222222222
+      },
+      {
+        "season": 32,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.375,
+        "bias_score": 0.625
+      },
+      {
+        "season": 32,
+        "week": 8,
+        "fan_alignment": 0.5714285714285714,
+        "judge_alignment": 0.7142857142857143,
+        "bias_score": -0.1428571428571429
+      },
+      {
+        "season": 32,
+        "week": 9,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 33,
+        "week": 2,
+        "fan_alignment": 0.6923076923076923,
+        "judge_alignment": 0.9166666666666666,
+        "bias_score": -0.22435897435897434
+      },
+      {
+        "season": 33,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.9090909090909091,
+        "bias_score": 0.09090909090909094
+      },
+      {
+        "season": 33,
+        "week": 4,
+        "fan_alignment": 0.5555555555555556,
+        "judge_alignment": 0.4444444444444444,
+        "bias_score": 0.11111111111111116
+      },
+      {
+        "season": 33,
+        "week": 5,
+        "fan_alignment": 0.875,
+        "judge_alignment": 1.0,
+        "bias_score": -0.125
+      },
+      {
+        "season": 33,
+        "week": 6,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.42857142857142855,
+        "bias_score": 0.5714285714285714
+      },
+      {
+        "season": 33,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 34,
+        "week": 2,
+        "fan_alignment": 0.2857142857142857,
+        "judge_alignment": 0.7857142857142857,
+        "bias_score": -0.5
+      },
+      {
+        "season": 34,
+        "week": 3,
+        "fan_alignment": 1.0,
+        "judge_alignment": 1.0,
+        "bias_score": 0.0
+      },
+      {
+        "season": 34,
+        "week": 4,
+        "fan_alignment": 0.9090909090909091,
+        "judge_alignment": 0.45454545454545453,
+        "bias_score": 0.45454545454545453
+      },
+      {
+        "season": 34,
+        "week": 6,
+        "fan_alignment": 0.8,
+        "judge_alignment": 0.9,
+        "bias_score": -0.09999999999999998
+      },
+      {
+        "season": 34,
+        "week": 7,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.7777777777777778,
+        "bias_score": 0.2222222222222222
+      },
+      {
+        "season": 34,
+        "week": 8,
+        "fan_alignment": 0.75,
+        "judge_alignment": 0.875,
+        "bias_score": -0.125
+      },
+      {
+        "season": 34,
+        "week": 9,
+        "fan_alignment": 0.7142857142857143,
+        "judge_alignment": 1.0,
+        "bias_score": -0.2857142857142857
+      },
+      {
+        "season": 34,
+        "week": 10,
+        "fan_alignment": 1.0,
+        "judge_alignment": 0.3333333333333333,
+        "bias_score": 0.6666666666666667
+      }
+    ]
+  },
+  "fan_vote_alignment": {
+    "percentage_method": 0.7473174603174604,
+    "rank_method": 0.33818342151675485
+  },
+  "statistical_test": {
+    "percentage_mean": 0.07824799358890268,
+    "rank_mean": -0.048190698190698184,
+    "t_statistic": 2.732672746927528,
+    "p_value": 0.006709798387324842,
+    "conclusion": "Percentage method is SIGNIFICANTLY more biased toward fan votes"
+  }
+}

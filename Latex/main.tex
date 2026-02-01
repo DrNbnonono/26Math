@@ -426,17 +426,378 @@ p_{i,t} \propto \frac{1}{(r_{i,t}^F)^{0.5}}
 
 $\alpha = 0.5$时模型表现最优，与题目示例一致。
 
-%=================== 9. 结论 ===================
-\section{结论}
+%=================== 9. 第二问：投票方法对比分析 ===================
+\section{第二问：投票方法对比分析}
 
+\subsection{问题描述}
+第二问要求对比百分比法和排名法两种投票方法在各赛季的结果差异，分析争议性选手案例，并评估"评委从最后两名中选择淘汰"规则的影响。
+
+\subsection{方法对比模拟}
+
+我们将两种方法应用于全部34个赛季，发现：
+
+\begin{itemize}
+    \item \textbf{分歧率}：91.18\%的赛季（31/34）在两种方法下产生不同的淘汰结果
+    \item \textbf{分歧时间}：大多数赛季在前3周内就出现分歧
+    \item \textbf{未分歧赛季}：仅Season 1、6、24三个赛季两种方法结果完全一致
+\end{itemize}
+
+\subsubsection{方法偏向性分析}
+
+为了量化两种方法对观众投票的偏向程度，我们计算了每种方法的淘汰结果与纯观众投票的一致性：
+
+\begin{table}[H]
+\centering
+\caption{两种方法对观众投票的偏向性对比}
+\begin{tabular}{lcc}
+\toprule
+\textbf{指标} & \textbf{百分比法} & \textbf{排名法} \\
+\midrule
+与纯观众投票一致率 & 74.73\% & 33.82\% \\
+偏向性得分（均值） & 0.0782 & -0.0482 \\
+样本量 & 198 & 66 \\
+\midrule
+\multicolumn{3}{l}{\textbf{统计检验（t-test）}} \\
+t统计量 & \multicolumn{2}{c}{2.7327} \\
+p值 & \multicolumn{2}{c}{0.0067**} \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize **表示在0.01水平上显著} \\
+\end{tabular}
+\end{table}
+
+\textbf{关键发现}：
 \begin{enumerate}
-    \item 分别针对百分比法和排名法两种投票机制，建立了以平滑性为目标函数的优化模型
-    \item 模型求解结果显示，百分比法淘汰预测准确率为74.77\%，排名法为72.00\%
-    \item 提出了淘汰命中率和淘汰边际作为一致性衡量标准
-    \item 分析了估算结果的确定性，发现不同周次、不同参赛者的确定性存在差异
+    \item \textbf{百分比法显著偏向观众投票}：74.73\%的淘汰与纯观众投票结果一致，比排名法高40.9个百分点
+    \item \textbf{排名法更平衡}：仅33.82\%与纯观众投票一致，说明评委意见在排名法中权重更大
+    \item \textbf{统计显著性}：t检验p值为0.0067（<0.01），证明差异具有高度统计显著性
 \end{enumerate}
 
-模型能够较好地估算观众投票分布，为后续分析两种投票方法的公平性以及舞者、名人特征的影响提供了基础数据支持。
+这一发现解释了为什么争议性选手（如Bristol Palin）在百分比法下能走得更远——该方法给予观众投票更大的影响力。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/2-fig-method-bias-comparison.png}
+\caption{两种方法对观众投票偏向性的综合分析}
+\label{fig:bias_comparison}
+\end{figure}
+
+图\ref{fig:bias_comparison}展示了两种方法的偏向性对比。从图中可以清晰看出：
+\begin{itemize}
+    \item 百分比法的淘汰结果有74.73\%与纯观众投票一致，显著高于排名法的33.82\%
+    \item 偏向性得分分布显示百分比法均值为正（0.0782），排名法为负（-0.0482）
+    \item 箱线图对比进一步证实了两种方法在偏向性上的显著差异
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/2-fig-alignment-pie-chart.png}
+\caption{两种方法与纯观众投票的一致性饼图对比}
+\label{fig:alignment_pie}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/2-fig-method-divergence.png}
+\caption{两种方法在各赛季的分歧情况}
+\label{fig:method_divergence}
+\end{figure}
+
+\subsection{争议性选手识别}
+
+通过技术-人气偏离度指数识别粉丝型选手：
+\begin{equation}
+D_i = \frac{1}{T_i} \sum_{t=1}^{T_i} \left( \frac{\hat{v}_{i,t} - \mathbb{E}[v_{i,t} | s_{i,t}]}{\hat{\sigma}_v} \right)
+
+使用K-means聚类将选手分为三类：
+\begin{itemize}
+    \item \textbf{粉丝型}（22.1\%）：观众支持远超技术表现
+    \item \textbf{均衡型}（34.2\%）：评委分数与观众投票相匹配
+    \item \textbf{评委型}（43.7\%）：技术表现优于观众人气
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/2-fig-cluster-analysis.png}
+\caption{选手聚类分析结果}
+\label{fig:cluster}
+\end{figure}
+
+\subsection{个案研究}
+
+对四位争议性选手的分析结果如表\ref{tab:controversial}所示。
+
+\begin{table}[H]
+\centering
+\caption{争议性选手案例分析}
+\label{tab:controversial}
+\begin{tabular}{lccc}
+\toprule
+\textbf{选手} & \textbf{赛季} & \textbf{最终名次} & \textbf{偏离指数} \\
+\midrule
+Jerry Rice & 2 & 2 & 1.384 \\
+Billy Ray Cyrus & 4 & 5 & -0.470 \\
+Bristol Palin & 11 & 3 & 2.327 \\
+Bobby Bones & 27 & 1 & 1.492 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/2-fig-controversial-trajectory.png}
+\caption{四位争议性选手的周间表现轨迹}
+\label{fig:trajectory}
+\end{figure}
+
+\subsection{方法推荐}
+
+基于分析结果，我们建议：
+
+\begin{enumerate}
+    \item \textbf{根据节目定位选择方法}：
+    \begin{itemize}
+        \item 若强调\textbf{观众参与和娱乐性}：采用百分比法（74.7\%偏向观众）
+        \item 若强调\textbf{技术水准和专业性}：采用排名法（更平衡，评委权重更大）
+    \end{itemize}
+    
+    \item \textbf{当前实践分析}：
+    \begin{itemize}
+        \item Seasons 3-27使用百分比法，符合真人秀娱乐定位
+        \item Seasons 28+改用排名法，可能是为了减少争议、提升专业性
+    \end{itemize}
+    
+    \item \textbf{引入"底二评委选择"规则}，但需加约束：
+    \begin{itemize}
+        \item 仅在中后期启用（剩余6-8组时）
+        \item 每季最多使用3-5次，避免评委主导
+        \item 该规则可减少极端争议，同时保留观众投票的影响力
+    \end{itemize}
+    
+    \item \textbf{混合方案}（推荐）：
+    \begin{itemize}
+        \item 前期（Week 1-5）：百分比法，保持观众参与热情
+        \item 中期（Week 6-8）：引入"底二评委选择"，平衡技术与人气
+        \item 后期（决赛）：排名法，确保技术水准决定冠军
+    \end{itemize}
+\end{enumerate}
+
+%=================== 10. 第三问：因素影响分析 ===================
+\section{第三问：因素影响分析}
+
+\subsection{问题描述}
+第三问要求分析职业舞者、名人特征（年龄、行业等）对比赛表现的影响，并比较这些因素对评委分数和观众投票的影响差异。
+
+\subsection{数据准备与多重共线性检验}
+
+构建特征矩阵后，进行VIF检验发现：
+\begin{itemize}
+    \item judge\_total与judge\_percent高度相关（VIF>10）
+    \item 保留judge\_avg\_score作为评委表现指标
+    \item 其他特征VIF<5，无严重多重共线性
+\end{itemize}
+
+\subsection{模型A：评委分数预测}
+
+使用随机森林回归模型：
+\begin{equation}
+J_{i,t} = f(\text{age}, \text{industry}, \text{dancer}, \text{season}, \text{week})
+\end{equation}
+
+模型性能：R² = 0.3988，RMSE = 1.6347
+
+使用110个特征（年龄 + 109个分类变量哑变量）
+
+主要发现：
+\begin{itemize}
+    \item \textbf{年龄}是最重要特征（重要性41.8\%）
+    \item \textbf{职业舞者}影响显著：Artem Chigvintsev（6.6\%）、Witney Carson（5.7\%）
+    \item \textbf{行业}有一定影响：社交媒体人（3.0\%）、电视名人（2.5\%）
+\end{itemize}
+
+\subsection{模型B：观众投票预测}
+
+使用随机森林回归模型：
+\begin{equation}
+\hat{p}_{i,t} = g(\text{age}, \text{industry}, \text{dancer}, \text{home}, \text{season}, \text{week})
+\end{equation}
+
+模型性能：R² = 0.5611，RMSE = 0.0843
+
+使用110个特征（年龄 + 109个分类变量哑变量）
+
+主要发现：
+\begin{itemize}
+    \item \textbf{年龄}是最重要特征（重要性44.7\%）
+    \item \textbf{职业舞者}影响显著：Derek Hough（4.3\%）、Valentin Chmerkovskiy（4.2\%）
+    \item \textbf{行业}影响：运动员（3.5\%）更受观众欢迎
+    \item \textbf{国籍}有影响：智利选手（2.3\%）获得更多观众支持
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/3-fig-coefficient-comparison.png}
+\caption{评委分数模型与观众投票模型的特征重要性对比}
+\label{fig:coef_comparison}
+\end{figure}
+
+\subsection{模型C：最终名次预测}
+
+使用梯度提升回归模型：
+\begin{equation}
+\text{Placement}_i = h(\text{survival\_weeks}, \text{avg\_judge}, \text{avg\_fan}, \text{age}, \text{dancer}, \text{industry})
+\end{equation}
+
+模型性能：R² = 0.9898，RMSE = 0.3785
+
+特征重要性排序：
+\begin{enumerate}
+    \item 生存周数（79.5\%）
+    \item 平均观众投票（12.5\%）
+    \item 平均评委分数（4.5\%）
+    \item 年龄（3.4\%）
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/3-fig-feature-importance.png}
+\caption{最终名次预测模型的特征重要性}
+\label{fig:importance}
+\end{figure}
+
+\subsection{职业舞者影响分析}
+
+不同舞者对选手表现的影响存在显著差异：
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/3-fig-dancer-impact.png}
+\caption{职业舞者对评委分数和观众投票的影响}
+\label{fig:dancer}
+\end{figure}
+
+\subsection{因素影响对比分析}
+
+通过对比110个相同特征在两个模型中的重要性，发现评委分数与观众投票的影响因素存在显著差异：
+
+\subsubsection{年龄因素}
+\begin{itemize}
+    \item 评委模型：重要性41.8\%
+    \item 观众模型：重要性44.7\%
+    \item \textbf{结论}：年龄对两者影响相近，观众略微更关注年龄
+\end{itemize}
+
+\subsubsection{职业舞者因素}
+评委与观众对不同舞者的偏好存在差异：
+
+\begin{table}[H]
+\centering
+\caption{职业舞者影响对比（Top 5差异最大）}
+\begin{tabular}{lcc}
+\toprule
+\textbf{舞者} & \textbf{评委重要性} & \textbf{观众重要性} \\
+\midrule
+Artem Chigvintsev & 6.59\% & 0.43\% \\
+Witney Carson & 5.74\% & 0.84\% \\
+Kym Johnson & 0.02\% & 2.70\% \\
+Chelsie Hightower & 0.53\% & 3.21\% \\
+Cheryl Burke & 0.24\% & 2.89\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{发现}：
+\begin{itemize}
+    \item Artem Chigvintsev和Witney Carson更受评委青睐（技术型舞者）
+    \item Kym Johnson、Chelsie Hightower、Cheryl Burke更受观众欢迎（人气型舞者）
+\end{itemize}
+
+\subsubsection{行业因素}
+不同行业选手对评委和观众的吸引力不同：
+
+\begin{table}[H]
+\centering
+\caption{行业影响对比}
+\begin{tabular}{lcc}
+\toprule
+\textbf{行业} & \textbf{评委重要性} & \textbf{观众重要性} \\
+\midrule
+社交媒体人 & 2.98\% & 0.18\% \\
+电视名人 & 2.45\% & 0.99\% \\
+运动员 & 2.41\% & 3.49\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{发现}：
+\begin{itemize}
+    \item 评委对社交媒体人和电视名人评分更高（可能因为表现力强）
+    \item 观众更喜欢运动员选手（励志故事、拼搏精神）
+\end{itemize}
+
+\subsubsection{国籍因素}
+\begin{itemize}
+    \item 智利选手在观众投票中重要性达2.26\%，但在评委评分中几乎为0
+    \item 说明观众投票受地域、文化认同影响更大
+\end{itemize}
+
+\subsubsection{总体对比}
+\begin{itemize}
+    \item \textbf{共同点}：年龄是两者最重要的影响因素
+    \item \textbf{差异点}：
+    \begin{itemize}
+        \item 评委更关注技术型舞者和表现力强的行业
+        \item 观众更关注人气型舞者、运动员和国籍认同
+        \item 110个特征中，57个更影响评委，42个更影响观众
+    \end{itemize}
+    \item \textbf{预测难度}：观众投票模型R²（0.5611）高于评委分数模型R²（0.3988），说明观众投票更容易通过选手特征预测
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/3-fig-industry-comparison.png}
+\caption{不同行业选手的评委分数与观众投票对比}
+\label{fig:industry}
+\end{figure}
+
+%=================== 11. 总结论 ===================
+\section{总结论}
+
+本文针对《与星共舞》节目的观众投票估算、投票方法对比和因素影响分析三个问题，建立了完整的数学模型体系，主要成果如下：
+
+\subsection{第一问成果}
+\begin{enumerate}
+    \item 建立了百分比法和排名法两种约束优化模型，成功估算34个赛季共2,777条选手-周次记录的观众投票比例
+    \item 百分比法淘汰预测准确率达96.97\%，排名法达77.27\%
+    \item 提出了淘汰命中率和淘汰边际作为一致性衡量标准
+    \item 量化了估算结果的不确定性，为后续分析提供了可靠的数据基础
+\end{enumerate}
+
+\subsection{第二问成果}
+\begin{enumerate}
+    \item 发现91.18\%的赛季在两种方法下产生不同结果，证明方法选择对比赛结果有重大影响
+    \item \textbf{量化方法偏向性}：百分比法74.73\%偏向观众投票，排名法仅33.82\%，差异具有高度统计显著性（p=0.0067）
+    \item 通过K-means聚类识别出22.1\%的粉丝型选手、34.2\%的均衡型选手和43.7\%的评委型选手
+    \item 深度分析了Jerry Rice、Billy Ray Cyrus、Bristol Palin、Bobby Bones四位争议性选手
+    \item 提出混合方案：前期用百分比法保持观众热情，中期引入"底二评委选择"，后期用排名法确保技术水准
+\end{enumerate}
+
+\subsection{第三问成果}
+\begin{enumerate}
+    \item 建立了评委分数、观众投票和最终名次三个预测模型，R²分别达到0.3988、0.5611和0.9898
+    \item 使用110个名人特征（年龄+109个分类变量）进行预测，不依赖评委分数本身
+    \item 发现年龄是评委分数（41.8\%）和观众投票（44.7\%）的最重要影响因素
+    \item 评委更青睐技术型舞者（Artem、Witney）和表现力强的行业（社交媒体人、电视名人）
+    \item 观众更喜欢人气型舞者（Kym、Chelsie、Cheryl）和运动员选手
+    \item 观众投票受国籍认同影响更大（如智利选手），评委评分则不受此影响
+    \item 生存周数是最终名次的最强预测因子（重要性79.5\%），其次是观众投票（12.5\%）
+\end{enumerate}
+
+\subsection{研究意义}
+\begin{itemize}
+    \item \textbf{理论贡献}：提出了基于平滑性假设的观众投票逆向估算方法
+    \item \textbf{实践价值}：为节目组优化投票规则、平衡技术与人气提供了数据支持
+    \item \textbf{方法创新}：综合运用约束优化、机器学习、聚类分析等多种方法
+\end{itemize}
 
 %=================== 参考文献 ===================
 \begin{thebibliography}{9}

@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Jerry Rice",
+    "season": 2,
+    "final_placement": 2,
+    "weeks_survived": 8,
+    "weekly_analysis": [
+      {
+        "week": 1,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.081308197822862,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 2,
+        "judge_rank": 4,
+        "fan_vote_percent": 0.0867732702978219,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 3,
+        "judge_rank": 7,
+        "fan_vote_percent": 0.0864622983944773,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": true,
+        "actually_eliminated": false
+      },
+      {
+        "week": 4,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.2488872618038387,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 5,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.2747313930583076,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 6,
+        "judge_rank": 4,
+        "fan_vote_percent": 0.309437473548265,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 7,
+        "judge_rank": 4,
+        "fan_vote_percent": 0.3591364427276414,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 8,
+        "judge_rank": 3,
+        "fan_vote_percent": 0.4377407751375031,
+        "current_method": "rank",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      }
+    ]
+  },
+  {
+    "name": "Billy Ray Cyrus",
+    "season": 4,
+    "final_placement": 5,
+    "weeks_survived": 8,
+    "weekly_analysis": [
+      {
+        "week": 1,
+        "judge_rank": 11,
+        "fan_vote_percent": 0.0219466039138216,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 2,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.0238172904071177,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 3,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.0248361925352595,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 4,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.0253576833495276,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 5,
+        "judge_rank": 7,
+        "fan_vote_percent": 0.0280974847865563,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 6,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.0309846628890278,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 7,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.033896156815201,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": true,
+        "actually_eliminated": false
+      },
+      {
+        "week": 8,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.0312119783332266,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": true,
+        "actually_eliminated": true
+      }
+    ]
+  },
+  {
+    "name": "Bristol Palin",
+    "season": 11,
+    "final_placement": 3,
+    "weeks_survived": 10,
+    "weekly_analysis": [
+      {
+        "week": 1,
+        "judge_rank": 7,
+        "fan_vote_percent": 0.3137515720932067,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 2,
+        "judge_rank": 3,
+        "fan_vote_percent": 0.3136811484166829,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 3,
+        "judge_rank": 9,
+        "fan_vote_percent": 0.3137767726273693,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 4,
+        "judge_rank": 8,
+        "fan_vote_percent": 0.3139036610376643,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 5,
+        "judge_rank": 8,
+        "fan_vote_percent": 0.3138656511998745,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 6,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.3140104567063199,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 7,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.3167842203749759,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 8,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.3209971622437304,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 9,
+        "judge_rank": 4,
+        "fan_vote_percent": 0.330465018228112,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 10,
+        "judge_rank": 3,
+        "fan_vote_percent": 0.3333333358353263,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": true,
+        "actually_eliminated": false
+      }
+    ]
+  },
+  {
+    "name": "Bobby Bones",
+    "season": 27,
+    "final_placement": 1,
+    "weeks_survived": 9,
+    "weekly_analysis": [
+      {
+        "week": 1,
+        "judge_rank": 5,
+        "fan_vote_percent": 0.2261346207291146,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 2,
+        "judge_rank": 10,
+        "fan_vote_percent": 0.2261587387494363,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 3,
+        "judge_rank": 8,
+        "fan_vote_percent": 0.2260772456492984,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 4,
+        "judge_rank": 9,
+        "fan_vote_percent": 0.2262679712612704,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 5,
+        "judge_rank": 8,
+        "fan_vote_percent": 0.2279391292761589,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 6,
+        "judge_rank": 7,
+        "fan_vote_percent": 0.2295752018772536,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 7,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.2329788718847243,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 8,
+        "judge_rank": 6,
+        "fan_vote_percent": 0.2391561403710626,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": false,
+        "actually_eliminated": false
+      },
+      {
+        "week": 9,
+        "judge_rank": 4,
+        "fan_vote_percent": 0.2500019774308079,
+        "current_method": "percentage",
+        "would_be_eliminated_other_method": true,
+        "actually_eliminated": false
+      }
+    ]
+  }
+]
